@@ -1,7 +1,12 @@
 @import 'vendor/normalize.scss';
 @import 'variables.scss';
+// Малые компоненты
+@import 'components/text.scss';
+@import 'components/title.scss';
+// Большие компоненты
 @import 'components/header.scss';
 @import 'components/about.scss';
+@import 'components/company.scss';
 
 @font-face {
   font-family: "Inter";
@@ -33,7 +38,7 @@ body {
   color: $color-body;
   font-family: 'Inter', 'Courier', monospace;
   font-weight: 500;
-  background-color: rgb(232 226 226);
+  background-color: #FFF;
 }
 
 * {
