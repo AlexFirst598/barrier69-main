@@ -7,6 +7,7 @@
 @import 'components/header.scss';
 @import 'components/about.scss';
 @import 'components/company.scss';
+@import 'components/works.scss';
 
 @font-face {
   font-family: "Inter";
@@ -39,6 +40,8 @@ body {
   font-family: 'Inter', 'Courier', monospace;
   font-weight: 500;
   background-color: #FFF;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 * {
@@ -69,4 +72,8 @@ li {
   background-image: url('/assets/img/BG_IMG.png');
   background-size: cover;
   background-attachment: fixed;
+
+  @media (max-width: 576px) {
+    height: fit-content;
+  }
 }

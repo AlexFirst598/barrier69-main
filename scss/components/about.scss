@@ -1,6 +1,10 @@
 .about {
     &__wrapper {
         padding: 152px 0 266px;
+
+        @media (max-width: 576px) {
+            padding: 79px 0 40px;
+        }
     }
 
     &__title {
@@ -11,6 +15,15 @@
         /* 80px */
         margin-bottom: 28px;
         margin-top: 0;
+
+        @media (max-width: 940px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
     }
 
     &__descr {
@@ -21,6 +34,11 @@
         /* 26px */
         max-width: 570px;
         margin-bottom: 60px;
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+            margin-bottom: 41px;
+        }
     }
 
     &__btn {
@@ -36,6 +54,7 @@
         line-height: 120%;
         /* 19.2px */
         transition: background-color 0.3s;
+
         &:hover {
             background-color: #FFF;
         }

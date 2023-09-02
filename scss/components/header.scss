@@ -9,6 +9,26 @@
     &__list {
         display: flex;
         gap: 30px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__MenuBtn {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            width: 20px;
+            height: 16px;
+        }
+    }
+
+    &__tel {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__link {

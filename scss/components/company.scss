@@ -2,23 +2,49 @@
     padding-top: 150px;
     padding-bottom: 230px;
 
+    @media (max-width: 800px) {
+        padding-bottom: 0px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 80px;
+    }
+
     &__wrapper {
         background-image: url('../../assets/img/Spheres.svg');
         background-repeat: no-repeat;
         background-position: right top;
+
+        @media (max-width: 800px) {
+            background-position: left bottom;
+            padding-bottom: calc(247px - 80px);
+        }
     }
 
     &__title {
         margin-bottom: 40px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
         margin-bottom: 64px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__list {
         display: flex;
         gap: 9px;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
@@ -26,15 +52,31 @@
         height: 300px;
         background: #FAFAFA;
 
+
+        @media (max-width: 576px) {
+            width: 100%;
+            height: auto;
+        }
+
         img {
             padding: 30px 244px 0px 30px;
             width: 120px;
             height: 120px;
+
+            @media (max-width: 576px) {
+                width: 100px;
+                height: 100px;
+                padding: 20px 0 0 20px;
+            }
         }
 
         &--yellow {
             background: var(--color-3, #F0C631);
             box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 11px 24px 0px rgba(0, 0, 0, 0.10), 0px 43px 43px 0px rgba(0, 0, 0, 0.09), 0px 98px 59px 0px rgba(0, 0, 0, 0.05), 0px 173px 69px 0px rgba(0, 0, 0, 0.01), 0px 271px 76px 0px rgba(0, 0, 0, 0.00);
+
+            @media (max-width: 1200px) {
+                box-shadow: 0 0 45px 8px rgba(34, 60, 80, .2);
+            }
         }
     }
 
@@ -47,6 +89,11 @@
         line-height: 120%;
         /* 28.8px */
         padding: 62px 45px 30px 30px;
+
+        @media (max-width: 576px) {
+            font-size: 20px;
+            padding: 95px 10px 30px 20px;
+        }
 
         span {
             color: #73640A;
