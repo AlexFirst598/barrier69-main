@@ -8,6 +8,10 @@
 @import 'components/about.scss';
 @import 'components/company.scss';
 @import 'components/works.scss';
+@import 'components/price.scss';
+@import 'components/tel.scss';
+@import 'components/footer.scss';
+@import 'components/menu.scss';
 
 @font-face {
   font-family: "Inter";
@@ -31,6 +35,10 @@
   font-family: "Inter";
   src: url('/assets/fonts/Inter-Regular.ttf');
   font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -60,12 +68,6 @@ body {
 
 li {
   list-style-type: none;
-
-  &::before {
-    margin-right: 0.5rem;
-    margin-left: -1rem;
-    content: '';
-  }
 }
 
 .bg-img {

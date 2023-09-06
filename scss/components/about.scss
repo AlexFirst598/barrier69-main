@@ -1,9 +1,9 @@
 .about {
     &__wrapper {
-        padding: 152px 0 266px;
+        padding: calc(152px + 95px) 0 266px;
 
         @media (max-width: 576px) {
-            padding: 79px 0 40px;
+            padding: calc(79px + 95px) 0 40px;
         }
     }
 

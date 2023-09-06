@@ -11,20 +11,36 @@
 </head>
 
 <body>
+  <div class="menu">
+    <div class="container">
+      <div class="menu__wrapper">
+        <div class="menu__top">
+          <a href="" class="menu__logo"><img src="assets/img/NEW-LOGO.svg"></a>
+          <a href="" class="menu__close"><img src="assets/img/close.svg"></a>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" class="menu__link title">О компании</a></li>
+          <li class="menu__item"><a href="" class="menu__link title">Виды работ</a></li>
+          <li class="menu__item"><a href="" class="menu__link title">Прайс-лист</a></li>
+        </ul>
+        <a href="tel:+79622401608" class="menu__tel">+7 (962) 240-16-08</a>
+      </div>
+    </div>
+  </div>
   <div class="bg-img">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href="#"><img src="assets/img/LOGO_BARRIER.svg" alt="logo"></a>
+          <a href="#"><img src="assets/img/LOGO-BLACK.svg" alt="logo"></a>
           <nav class="header__nav">
             <ul class="header__list">
-              <li><a href="" class="header__link header__link--current">О компании</a></li>
-              <li><a href="" class="header__link">Виды работ</a></li>
-              <li><a href="" class="header__link">Прайс-лист</a></li>
+              <li><a href="#company" class="header__link header__link--current">О компании</a></li>
+              <li><a href="#works" class="header__link">Виды работ</a></li>
+              <li><a href="#price" class="header__link">Прайс-лист</a></li>
             </ul>
           </nav>
           <a href="tel:+79622401608" class="header__link header__tel">+7 (962) 240-16-08</a>
-          <a href="#" class="header__MenuBtn"><img src="assets/img/Menu.svg" alt="icon-menu"></a>
+          <a href="#" class="header__MenuBtn"><img src="assets/img/Menu-black.svg" alt="icon-menu"></a>
         </div>
       </div>
     </header>
@@ -34,13 +50,13 @@
           <h1 class="about__title">Установка барьерных и пешеходных ограждений</h1>
           <p class="about__descr">Квалифицированный и добросовестный подрядчик в области дорожной безопасности в
             западной, северной и южной частях России.</p>
-          <a href="" class="about__btn">УЗНАТЬ СТОИМОСТЬ</a>
+          <a href="#price" class="about__btn">УЗНАТЬ СТОИМОСТЬ</a>
         </div>
       </div>
     </section>
   </div>
   <main class="main">
-    <section class="company">
+    <section class="company" id="company">
       <div class="container">
         <div class="company__wrapper">
           <h2 class="title company__title">О компании</h2>
@@ -59,7 +75,7 @@
         </div>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="container">
         <div class="works__wrapper">
           <h2 class="works__title title">виды работ</h2>
@@ -95,6 +111,44 @@
         </div>
       </div>
     </section>
+    <section class="price" id="price">
+      <div class="container">
+        <div class="price__wrapper">
+          <h2 class="title price__title">прайс-лист</h2>
+          <p class="text price__subtitle"><strong style="color: black;">L</strong> - Длина устанавливаемого участка</p>
+          <ul class="price__list">
+            <li class="price__item">
+              <p class="price__key">L&lt;50м</p>
+              <p class="price__value">от 600р/п.м</p>
+            </li>
+            <li class="price__item">
+              <p class="price__key">50м&lt;L&lt;150м</p>
+              <p class="price__value">от 550р/п.м</p>
+            </li>
+            <li class="price__item">
+              <p class="price__key">150м&lt;L&lt;300м</p>
+              <p class="price__value">от 500р/п.м</p>
+            </li>
+            <li class="price__item">
+              <p class="price__key">300м&lt;L&lt;1000м</p>
+              <p class="price__value">от 450р/п.м</p>
+            </li>
+            <li class="price__item">
+              <p class="price__key">L&gt;1000м</p>
+              <p class="price__value">договорная</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="tel">
+      <div class="container">
+        <div class="tel__wrapper">
+          <h4 class="tel__title">Звоните нам:</h4>
+          <a href="tel:+79622401608" class="tel__link">+7 (962) 240-16-08</a>
+        </div>
+      </div>
+    </section>
     <!-- <section class="test">
       <div class="container">
         <div class="test__wrapper">
@@ -111,6 +165,22 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
+        <div class="footer__top">
+          <a class="footer__logo" href="#"><img src="assets/img/LOGO.svg"></a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h4 class="footer__h4">E-mail</h4>
+              <a class="footer__link" href="mailto:ip.kat.ds@mail.ru">ip.kat.ds@mail.ru</a>
+            </li>
+            <li class="footer__item">
+              <h4 class="footer__h4">Телефон</h4>
+              <a class="footer__link" href="tel:+79622401608">+7 (962) 240-16-08</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">2023. Все права защищены.</p>
+        </div>
       </div>
     </div>
   </footer>
